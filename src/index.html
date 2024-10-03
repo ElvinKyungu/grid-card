@@ -1,40 +1,51 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  <style>
-    .expanded {
-      position: absolute;
-      top: 0;left: 0;
-      width: 100% !important;
-      height: 100% !important;
-      z-index: 10;
-    }
-    .relative img {
-      transition: all 0.5s ease;
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
 </head>
 <body>
-  <div class="flex items-center justify-center h-screen">
-    <div class="w-1/3 h-1/2 flex flex-wrap justify-center items-center overflow-hidden bg-gray-100 relative">
-      <img class="img" src="https://images.unsplash.com/photo-1589782431327-ac8a63d965a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBhcmZ1bSUyMGx1eGV8ZW58MHx8MHx8fDA%3D" alt="">
-      <img class="img" src="https://images.unsplash.com/photo-1591375275773-59691a15defa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhcmZ1bSUyMGx1eGV8ZW58MHx8MHx8fDA%3D" alt="">
-      <img class="img" src="https://images.unsplash.com/photo-1591375372226-3531cf2eb6d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhcmZ1bSUyMGx1eGV8ZW58MHx8MHx8fDA%3D" alt="">
-      <img class="img" src="https://images.unsplash.com/photo-1590156220728-bea5ba090f82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcmZ1bSUyMGx1eGV8ZW58MHx8MHx8fDA%3D" alt="">
-      <img class="img" src="https://images.unsplash.com/photo-1589820933525-dadd23d13c56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBhcmZ1bSUyMGx1eGV8ZW58MHx8MHx8fDA%3D" alt="">
-      <img class="img" src="https://plus.unsplash.com/premium_photo-1661645449694-5bf9766205e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHBhcmZ1bSUyMGx1eGV8ZW58MHx8MHx8fDA%3D" alt="">
-      <img class="img" src="https://images.unsplash.com/photo-1590156221187-1710315f710b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGFyZnVtJTIwbHV4ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
-      <img class="img" src="https://images.unsplash.com/photo-1590156117763-d5909f5ccbc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cGFyZnVtJTIwbHV4ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
-      <img class="img" src="https://plus.unsplash.com/premium_photo-1661311935766-990b7ef9982d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGFyZnVtJTIwbHV4ZXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+  <div class="app">
+    <div class="gallery">
+      <div class="item" data-title="Owl" data-secondary="Hoo are you?" data-text="Owel lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/parks.avif" alt="" />
+      </div>
+      <div class="item" data-title="Deer" data-secondary="Hi deer." data-text="Deer lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/panoramic.avif" alt="" />
+      </div>
+      <div class="item" data-title="Hipster" data-secondary="What's new?" data-text="Hipster lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+          <img src="./img/origine-tokyo.avif" alt="" />
+      </div>
+      <div class="item" data-title="Ram" data-secondary="I just drank a Mountain Dew." data-text="Ram lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/people-tokyo.avif" alt="" />
+      </div>
+      <div class="item" data-title="Dog" data-secondary="I'm trying to sleep here." data-text="Dog lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/market.avif" alt="" />
+      </div>
+      <div class="item" data-title="Bored Ram" data-secondary="No time for you." data-text="Ram side lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/nightligh1.avif" alt="" />
+      </div>
+      <div class="item" data-title="Super Ram" data-secondary="I have lazer vision." data-text="Ram horns lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/market.avif" alt="" />
+      </div>
+      <div class="item" data-title="Gorilla" data-secondary="I can fit a whole watermelon in my mouth." data-text="Gorrilla lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/capital-otkyo.avif" alt="" />
+      </div>
+      <div class="item" data-title="Birb" data-secondary="I'm just here to chill." data-text="Birb lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cum, est amet delectus, blanditiis voluptatem laborum pariatur consequatur quae voluptate, nisi. Laborum adipisci iste earum distinctio, fugit, quas ipsa impedit.">
+        <img src="./img/cuisine1.avif" alt="" />
+      </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-  <script src="app.js"></script>
+  <div class="detail">
+    <img />
+    <div class="overlay"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+
+  <script src="./app.js"></script>
+
 </body>
 </html>
